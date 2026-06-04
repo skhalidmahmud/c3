@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive HTML Demonstration</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Pure HTML Showcase</h1>
+        <p>This page is built using <strong>only</strong> HTML elements to demonstrate structure and semantics.</p>
+        
+        <nav>
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#text-formatting">Text Formatting</a></li>
+                <li><a href="#lists">Lists & Grouping</a></li>
+                <li><a href="#data-table">Data Table</a></li>
+                <li><a href="#user-form">Interactive Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section id="text-formatting">
+            <h2>1. Text Formatting Elements</h2>
+            <p>This is a standard paragraph element showing off various text-level semantics:</p>
+            <p>
+                You can make text <b>bold</b> or <strong>strongly emphasized</strong>. <br>
+                You can use <i>italics</i> or <em>emphasize</em> it differently. <br>
+                Sometimes you need to <u>underline</u> text, <mark>highlight</mark> important words, or show <del>deleted</del> and <ins>inserted</ins> text.
+            </p>
+            <p>
+                Mathematical formulas often use superscripts like E=mc<sup>2</sup>, and chemical formulas use subscripts like H<sub>2</sub>O.
+            </p>
+            
+            <blockquote>
+                "This is a blockquote element, typically used for quoting longer passages of text from an external source."
+            </blockquote>
+        </section>
+
+        <section id="lists">
+            <h2>2. Lists and Media</h2>
+            
+            <h3>Unordered List</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <h3>Ordered List</h3>
+            <ol>
+                <li>Plan the structure</li>
+                <li>Write the markup</li>
+                <li>Test in the browser</li>
+            </ol>
+
+            <h3>Description List</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>HTTP</dt>
+                <dd>Hypertext Transfer Protocol</dd>
+            </dl>
+
+            <h3>Image Element</h3>
+            <img src="https://via.placeholder.com/150" alt="A gray placeholder box" title="Placeholder Image">
+        </section>
+
+        <section id="data-table">
+            <h2>3. Table Elements</h2>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <caption>Employee Directory</caption>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Jane Doe</td>
+                        <td>Engineering</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>John Smith</td>
+                        <td>Design</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total Employees: 2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="user-form">
+            <h2>4. Form Elements</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required><br><br>
+
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password"><br><br>
+
+                    <p>Select your experience level:</p>
+                    <input type="radio" id="beginner" name="experience" value="beginner">
+                    <label for="beginner">Beginner</label><br>
+                    
+                    <input type="radio" id="advanced" name="experience" value="advanced">
+                    <label for="advanced">Advanced</label><br><br>
+
+                    <p>Select skills:</p>
+                    <input type="checkbox" id="frontend" name="skills" value="frontend">
+                    <label for="frontend">Front-end</label><br>
+                    
+                    <input type="checkbox" id="backend" name="skills" value="backend">
+                    <label for="backend">Back-end</label><br><br>
+
+                    <label for="country">Country:</label><br>
+                    <select id="country" name="country">
+                        <option value="us">United States</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="ca">Canada</option>
+                        <option value="au">Australia</option>
+                    </select><br><br>
+
+                    <label for="message">Your Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="40" placeholder="Type here..."></textarea><br><br>
+
+                    <input type="submit" value="Submit Form">
+                    <input type="reset" value="Clear Form">
+                    <button type="button">Custom Button</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Pure HTML Demonstration. Created for learning purposes.</p>
+        <p>Return to <a href="#top">top of page</a>.</p>
+    </footer>
+
+</body>
+</html>
